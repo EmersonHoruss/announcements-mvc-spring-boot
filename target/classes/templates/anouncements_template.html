@@ -1,0 +1,26 @@
+<div>
+	<h1>Anouncements</h1>
+	<a href="/anouncement">New</a>
+</div>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>About</th>
+		<th>Comments</th>
+		<th>Options</th>
+	</tr>
+	{{#anouncements}}
+		<tr>
+			<td>{{id}}</td>
+			<td>{{name}}</td>
+			<td>{{about}}</td>
+			<td>{{comments}}</td>
+			<td>
+				<a href="/anouncement/{{id}}">Edit</a>
+				<a>Delete</a>
+			</td>
+		</tr>
+	{{/anouncements}}
+</table>
+	

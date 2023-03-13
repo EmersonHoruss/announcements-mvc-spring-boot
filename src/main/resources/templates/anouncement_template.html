@@ -1,0 +1,23 @@
+<div>
+	<h1>Anouncement</h1>
+	<a href="/">Back</a>
+</div>
+
+<form action="/save" method="post">
+  <label for="name">Name</label>
+  <br>
+  <input type="text" name="name" id="name" value="{{anouncement.name}}"/>
+  <br><br>
+  
+  <label for="about">About</label>
+  <br>
+  <input type="text" name="about" id="about" value="{{anouncement.about}}"/>
+  <br><br>
+  
+  <label for="comments">Comments</label>
+  <br>
+  <textarea name="comments" id="comments" rows=5 cols=40>{{anouncement.comments}}</textarea>
+  <br><br>
+  
+  <input type="submit" value="Save"/>
+</form>
